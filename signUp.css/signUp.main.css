@@ -1,0 +1,27 @@
+body {
+ 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575) 0 100%),
+      url("../img/social-media.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .caption-login {
+    background-color: rgba(62, 62, 62, 0.313);
+  }
+  .address {
+    width: fit-content;
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: "Courier New", Courier, monospace;
+    color: rgb(255, 255, 255);
+
+    
+  }
+  
+  .mybtn{
+    border: none;
+    background-color: transparent;
+    text-decoration: underline;
+    color: blue;
+  }

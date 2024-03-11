@@ -1,0 +1,7 @@
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.575) 0 100%),
+    url("../img/social-media.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

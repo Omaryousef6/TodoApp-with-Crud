@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./crud.css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./crud.css/style.css" />
+  </head>
+  <body>
+    <div class="bg-opacity-50 bg-dark p-3 my-5 rounded-3 fw-bold text-white">
+      <h1 class="text-white text-center">Welcome To Your Crud</h1>
+      <div
+        class="bg-opacity-50 bg-white p-3 rounded-3 d-flex justify-content-between align-items-center"
+      >
+        <div>
+          <h2 id="UserNameLogin" class="text-capitalize text-black"></h2>
+        </div>
+        <button id="logOut" class="btn btn-primary">Log Out</button>
+      </div>
+
+      <div>
+        <label for="productNameInput">Product Name:</label>
+        <input
+          placeholder="Product Name.."
+          class="form-control"
+          type="text"
+          id="productNameInput"
+        />
+      </div>
+      <div>
+        <label for="productPriceInput">Price:</label>
+        <input
+          placeholder="price.."
+          class="form-control"
+          type="number"
+          id="productPriceInput"
+        />
+      </div>
+      <div>
+        <label for="productCategoryInput">Category:</label>
+        <input
+          placeholder="category.."
+          class="form-control"
+          type="text"
+          id="productCategoryInput"
+        />
+      </div>
+      <div>
+        <label for="productDescriptionInput">Product Description:</label>
+        <textarea
+          placeholder="Enter Your Description..."
+          class="form-control"
+          type="text"
+          id="productDescriptionInput"
+        ></textarea>
+      </div>
+
+      <button
+        class="btn btn-primary w-100 mt-3"
+        id="addBtn"
+        onclick="addProduct() "
+      >
+        Add Product
+      </button>
+      <button
+        class="btn btn-primary w-100 mt-3 d-none"
+        id="updateBtn"
+        onclick=" updateProduct()  "
+      >
+        Upadet Product
+      </button>
+
+      <input
+        oninput="searchData()"
+        type="search"
+        id="searchInput"
+        class="form-control my-3 w-50 m-auto"
+        placeholder="Search"
+      />
+
+      <table class="table my-3 text-center text-capitalize">
+        <thead>
+          <th>ID</th>
+          <th>Name</th>
+          <th>price</th>
+          <th>category</th>
+          <th>description</th>
+          <th>Action</th>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
+
+    <script src="./crud.js/bootstrap.bundle.min.js"></script>
+    <script src="./crud.js/index.js"></script>
+  </body>
+</html>

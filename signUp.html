@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./signUp.css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./signUp.css/signUp.main.css" />
+  </head>
+  <body>
+    <section
+      class="wrraper-login vh-100 d-flex justify-content-center align-items-center"
+    >
+      <div class="caption-login m-auto px-5 rounded-3">
+        <h2 class="address text-center my-5 m-auto p-2">Creat Email</h2>
+        <input
+          id="inputNameSignUp"
+          type="text"
+          class="form-control my-4"
+          placeholder="Entar your Name"
+        />
+        <input
+          id="inputEmailSignUp"
+          type="email"
+          class="form-control"
+          placeholder="Entar your Email"
+        />
+        <span id="textExistEmail" class="d-none my-0 text-danger rounded-5 px-2"
+          >Email is Exist.</span
+        >
+        <span id="TextValidEmail" class="d-none my-0 text-danger rounded-5 px-2"
+          >Please enter a valid email.</span
+        >
+        <input
+          id="inputPassSignUp"
+          type="password"
+          class="form-control my-4"
+          placeholder="Entar your password"
+        />
+        <p
+          id="messRequird"
+          class="text-bg-warning w-50 text-center fw-bold rounded-5 m-auto my-2 d-none"
+        >
+          All Input Required Validat
+        </p>
+        <button id="btnCreat" class="btn btn-primary w-100">Sign Up</button>
+        <p id="messUser" class="text-center text-muted m-3 fw-bolder">
+          You have an account?
+          <button class="mybtn" id="btnSignIn">Sign in</button>
+        </p>
+      </div>
+    </section>
+
+    <script src="./signUp.js/bootstrap.bundle.min.js"></script>
+    <script src="./signUp.js/signUp.index.js"></script>
+  </body>
+</html>

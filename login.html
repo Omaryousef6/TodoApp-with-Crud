@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css.login/all.min.css" />
+    <link rel="stylesheet" href="./css.login/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css.login/loginmain.css" />
+  </head>
+  <body>
+    <section
+      class="wrraper-login vh-100 d-flex justify-content-center align-items-center"
+    >
+      <div class="caption-login m-auto px-5 rounded-3">
+        <h2 class="address text-center my-3 m-auto p-2">Smart Login System</h2>
+        <div class="iconLogin w-25 m-auto my-3">
+          <img
+            class="w-100 rounded-circle"
+            src="./img/anonymous-user-flat-icon-vector-illustration-with-long-shadow_520826-1932.avif"
+            alt="photoUser"
+          />
+        </div>
+        <input
+          id="inputEmailLogin"
+          type="email"
+          class="form-control"
+          placeholder="Entar your email"
+        />
+        <input
+          id="inputPassLogin"
+          type="password"
+          class="form-control my-4"
+          placeholder="Entar your password"
+        />
+        <p
+          id="messNotSucces"
+          class="text-bg-dark w-50 text-center fw-bold rounded-5 m-auto my-2 d-none"
+        >
+          You Not Succes , Sign Up
+        </p>
+        <p
+          id="messSucces"
+          class="text-bg-success w-50 text-center fw-bold rounded-5 m-auto my-2 d-none"
+        >
+          You Succes
+        </p>
+        <p
+          id="messRequird"
+          class="text-bg-warning w-50 text-center fw-bold rounded-5 m-auto my-2 d-none"
+        >
+          All Input Required
+        </p>
+        <button id="btnLogin" class="btn btn-primary w-100">Login</button>
+        <p id="messUser" class="text-center text-white m-3 fw-bolder">
+          Don’t have an account..?
+          <button class="mybtn" id="btnSignUp">Sign Up</button>
+        </p>
+      </div>
+    </section>
+
+    <script src="./js.login/bootstrap.bundle.min.js"></script>
+    <script src="./js.login/login.index.js"></script>
+  </body>
+</html>
